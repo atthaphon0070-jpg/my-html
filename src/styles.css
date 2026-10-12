@@ -237,11 +237,11 @@ body.pointer-live #spot { opacity: 1; }
 .s2 .team-label i { font-style: normal; color: var(--gold); }
 .s2 .cards { position: absolute; left: 820px; top: 0; width: 1000px; height: 1080px; perspective: 1800px; }
 .s2 .card-wrap { position: absolute; }
-.s2 .card-wrap.c1 { left: 330px; top: 190px; width: 380px; z-index: 2; }
-.s2 .card-wrap.c2 { left: 20px; top: 330px; width: 320px; }
-.s2 .card-wrap.c3 { left: 700px; top: 330px; width: 320px; }
+.s2 .card-wrap.c1 { left: 330px; top: 380px; width: 380px; z-index: 2; }
+.s2 .card-wrap.c2 { left: 20px; top: 470px; width: 320px; }
+.s2 .card-wrap.c3 { left: 700px; top: 470px; width: 320px; }
 .s2 .tcard {
-  position: relative; border-radius: 30px; padding: 16px 16px 30px; transform-style: preserve-3d;
+  position: relative; border-radius: 30px; padding: 30px 22px 40px; transform-style: preserve-3d;
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.02) 55%, rgba(71, 123, 255, 0.06));
   box-shadow: 0 60px 100px -40px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.1);
   transition: transform 0.6s var(--ease);
@@ -259,7 +259,7 @@ body.pointer-live #spot { opacity: 1; }
 .s2 .c1 .portrait { height: 440px; }
 .s2 .portrait .ph svg.sil { width: 62%; height: auto; opacity: 0.5; color: #6f8fc0; }
 .s2 .portrait::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(3, 8, 18, 0.55)); pointer-events: none; }
-.s2 .role { margin: 26px 14px 0; font: 600 52px/1 var(--en); letter-spacing: 0.06em; color: var(--cyan); }
+.s2 .role { margin: 6px 14px 0; font: 600 52px/1 var(--en); letter-spacing: 0.06em; color: var(--cyan); }
 .s2 .c1 .role { color: var(--gold); font-size: 60px; }
 .s2 .name { margin: 12px 14px 0; font: 500 36px/1.4 var(--th); }
 .s2 .role-th { margin: 2px 14px 0; font: 400 18px/1.4 var(--en); letter-spacing: 0.16em; color: var(--slate); text-transform: uppercase; }
@@ -672,7 +672,7 @@ body.pointer-live #spot { opacity: 1; }
 /* =========================================================================
    SLIDE 13 — GALLERY
    ========================================================================= */
-.s13 .intro13 { position: absolute; left: 120px; top: 180px; width: 490px; }
+.s13 .intro13 { position: absolute; left: 120px; top: 160px; width: 1200px; }
 .s13 .intro13 .h1 { margin-top: 22px; font-size: 62px; white-space: nowrap; }
 .s13 .intro13 p { margin-top: 30px; font: 400 24px/1.6 var(--th); color: var(--slate); }
 .s13 .list13 { margin: 40px 0 0; padding: 0; list-style: none; display: grid; gap: 16px; }
@@ -861,3 +861,18 @@ body.reduced .slide.enter, body.reduced .slide.leave { animation-duration: 0.35s
   .s1 .title .ch { background: none; color: #eef3fb; }
   .s14 .trust { color: #f6d79c; text-shadow: 0 0 24px rgba(232, 190, 117, 0.75); }
 }
+
+/* Slide 03 — milestone 03 graphic (no photo) */
+.s3 .pitch { position: absolute; inset: 0; display: grid; place-items: center; }
+.s3 .pitch-board { width: 230px; height: 150px; border-radius: 18px; border: 1px solid rgba(232, 190, 117, 0.45); background: linear-gradient(160deg, rgba(232, 190, 117, 0.14), rgba(71, 123, 255, 0.08)); display: grid; place-content: center; justify-items: center; gap: 12px; box-shadow: 0 24px 50px -20px #000; transform: rotate(-3deg); }
+.s3 .pitch-board svg { width: 64px; height: 64px; color: var(--gold); }
+.s3 .pitch-board span { font: 600 15px/1 var(--en); letter-spacing: 0.32em; color: var(--ivory); }
+.s3 .pitch-tgt { position: absolute; right: 52px; top: 34px; width: 74px; height: 74px; border-radius: 50%; display: grid; place-items: center; background: rgba(84, 229, 255, 0.12); border: 1px solid rgba(84, 229, 255, 0.5); }
+.s3 .pitch-tgt svg { width: 40px; height: 40px; color: var(--cyan); }
+
+/* Slide 13 — activity cards (no photos) */
+.s13 .acts { position: absolute; left: 120px; right: 120px; top: 470px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; }
+.s13 .act { position: relative; height: 360px; padding: 44px 40px; border-radius: 28px; border: 1px solid var(--glass-border); background: linear-gradient(160deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.015) 60%, rgba(71, 123, 255, 0.07)); box-shadow: 0 50px 90px -40px #000; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; }
+.s13 .act .n { position: absolute; right: 34px; top: 26px; font: 600 110px/1 var(--en); color: transparent; -webkit-text-stroke: 1px var(--gold); opacity: 0.8; }
+.s13 .act svg { position: absolute; left: 40px; top: 44px; width: 64px; height: 64px; color: var(--cyan); }
+.s13 .act h3 { margin: 0; font: 600 32px/1.4 var(--th); color: var(--ivory); }

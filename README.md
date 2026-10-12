@@ -8,7 +8,7 @@ An interactive HTML presentation with 14 slides for the final review of the incu
 2. Press **F** for fullscreen.
 3. Press **N** to open the Thai speaker notes. A timer starts when the notes first open. The audience view never shows the notes unless you open them.
 
-`index.html` contains everything it needs: the IBM Plex Sans Thai and Space Grotesk fonts, the Three.js LUMI mascot, a real QR code and all the slide graphics. The one extra file it loads is the optional photo list in `assets/photos/photos.js`.
+`index.html` contains everything it needs: the IBM Plex Sans Thai and Space Grotesk fonts, the Three.js LUMI mascot, a real QR code and all the slide graphics.
 
 ### Controls
 
@@ -33,20 +33,9 @@ The deck follows the `prefers-reduced-motion` setting and switches to low-motion
 
 Use Chrome → Print → *Save as PDF* (enable *Background graphics*). Each slide prints on its own 1920×1080 page in its final state, with no animations.
 
-## Adding real photos
+## Photos
 
-Real photos are not included. Each photo slot shows a labelled placeholder until you add one, so the deck never shows a broken image.
-
-1. Copy the images into `assets/photos/`.
-2. Open `assets/photos/photos.js` and fill in the file names, for example `'team-ceo': 'assets/photos/ceo.jpg'`.
-
-| Slot key | Used on |
-|---|---|
-| `team-ceo`, `team-cto`, `team-cmo` | Slide 02 · team cards (portrait images work best) |
-| `line-chatbot` | Slide 03 · phone mockup of the old LINE chatbot |
-| `webapp` | Slide 03 · browser mockup of the current web app |
-| `activity-coaching`, `activity-bmc` | Slide 13 |
-| `activity-mayor`, `activity-school` | Slides 03 and 13 |
+The deck uses no photo slots. Slide 02 shows text-only team cards, slide 03 uses a drawn graphic for milestone 03, and slide 13 shows the three activities as cards.
 
 ## Editing and rebuilding
 
